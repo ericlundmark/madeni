@@ -1,0 +1,26 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="col-lg-6">
+				<h1><i class="fa fa-plus"> Credits</i></h1>
+				<h2>{{sumOfCredits()}}</h2>
+			</div>
+			<div class="col-lg-6">
+				<h1><i class="fa fa-minus"> Debts</i></h1>
+				<h2>{{sumOfDebts()}}</h2>
+			</div>
+			<div class="col-lg-12">
+				<h1 class="page-header">Unsettled debts</h1>
+				<ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="debt in debtor">
+					<li><a href="#">{{debt.sum}}<button type="button" class="close" ng-click="deleteThing(thing)">&times;</button></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+	</div>
+</footer>
