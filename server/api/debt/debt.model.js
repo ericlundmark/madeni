@@ -9,7 +9,7 @@ var DebtSchema = new Schema({
 	sum: { type:Number, min:0 }
 });
 DebtSchema.pre('save', function (next) {
-	if(this.debtor==this.creditor){
+	if(this.debtor===this.creditor){
 		var err = new Error('something went wrong');
 		next(err);
 	}else{

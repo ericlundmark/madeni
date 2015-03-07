@@ -27,5 +27,5 @@ angular.module('madeniApp')
 			});
 		}
 		return sum;
-	}
+	};
 });

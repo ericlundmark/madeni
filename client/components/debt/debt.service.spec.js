@@ -11,11 +11,11 @@ describe('Service: Debt', function () {
 		Debt = _Debt_;
 	}));
 	it('Should define method debtor', function() {
-		expect(Debt.debtor).toBeDefined()
-		expect(Debt.debtor).toEqual(jasmine.any(Function))
+		expect(Debt.debtor).toBeDefined();
+		expect(Debt.debtor).toEqual(any(Function));
 	});
 	it('Should define method creditor', function() {
-		expect(Debt.creditor).toBeDefined()
-		expect(Debt.creditor).toEqual(jasmine.any(Function))
+		expect(Debt.creditor).toBeDefined();
+		expect(Debt.creditor).toEqual(any(Function));
 	});
 });
