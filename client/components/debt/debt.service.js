@@ -3,7 +3,7 @@
 angular.module('madeniApp')
 .factory('Debt', function ($resource) {
 	return $resource('/api/debts/:id', {
-		id: '@_id'
+		id: '@id'
 	},
 	{
 		debtor: {

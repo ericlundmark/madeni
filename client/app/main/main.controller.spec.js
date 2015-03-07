@@ -34,8 +34,8 @@ describe('Controller: MainCtrl', function () {
 			creditor: 2,
 			sum: 123
 		};
-		scope.saveDebt(debt);
-		expect(scope.sendHTTP.callCount).to.equal(1);
-		expect(scope.sendHTTP.args[0][0]).to.equal(scope.document.text);
+		scope.addDebt(debt);
+		expect(sendHTTP.callCount).to.equal(1);
+		expect(sendHTTP.args[0][0]).to.equal(debt);
 	});
 });
